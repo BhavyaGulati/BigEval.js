@@ -1,8 +1,4 @@
-/*
-	BigEval.js
-	by Avi Aryan (http://aviaryan.in)
-	https://github.com/aviaryan/bigEval.js
-*/
+
 
 var root = Function('return this')();
 
