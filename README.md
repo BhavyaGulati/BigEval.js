@@ -1,11 +1,5 @@
 # BigEval.js
 
-[![Build Status](https://travis-ci.org/aviaryan/BigEval.js.svg?branch=master)](https://travis-ci.org/aviaryan/BigEval.js)
-[![Codecov](https://img.shields.io/codecov/c/github/aviaryan/BigEval.js.svg?maxAge=2592000)](https://codecov.io/github/aviaryan/BigEval.js)
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/e9e94367b8eb4952a7e0dda5c0dfdf29)](https://www.codacy.com/app/aviaryan/BigEval-js)
-[![npm](https://img.shields.io/npm/v/bigeval.svg)](https://www.npmjs.com/package/bigeval)
-[![npm](https://img.shields.io/npm/dm/bigeval.svg)](https://www.npmjs.com/package/bigeval)
-[![npm](https://img.shields.io/npm/l/bigeval.svg)]()
 
 An alternative to JavaScript's eval() for solving mathematical expressions. It can be extended to use the *Big Number* libraries available to provide results with maximum precision.
 
@@ -96,24 +90,3 @@ INFINITY = Infinity
 NaN = NaN
 ```
 
-
-### Extending with Big Number libraries
-
-BigEval can be extended with any of the big number libraries for JavaScript. To extend BigEval, we only need to change its methods that are responsible for adding, subtracting and so. For an example see the extension [MikeMcl-decimal.js](extensions/MikeMcl-decimal.js) which is based on [MikeMcl's Decimal.js library](https://github.com/MikeMcl/decimal.js). The HTML page [extended.html](http://aviaryan.github.io/BigEval.js/extended.html) shows how to use this extension.
-
-To use decimaljs extension with Node, download the [file](extensions/MikeMcl-decimal.js) and then
-```js
-var BigEval = require('./MikeMcl-decimal.js');
-var b = new BigEval();
-console.log(b.exec('-2 + 3'));
-```
-
-
-### Ports
-
-* [Eval.net](https://github.com/danielgindi/Eval.net) by [danielgindi](https://github.com/danielgindi) - .NET (C#) port
-
-
-### Contributors
-
-* [danielgindi](https://github.com/danielgindi)
